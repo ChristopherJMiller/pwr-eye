@@ -52,7 +52,7 @@ impl PowerStats {
         rating_power_watt: Self::first_term(lines["Rating Power"].clone()),
         output_voltage: Self::first_term(lines["Output Voltage"].clone()),
         model_name: lines["Model Name"].clone(),
-        battery_capacity: Self::first_term::<f32>(lines["Battery Capacity"].clone()) / 100.0,
+        battery_capacity: Self::first_term::<f32>(lines["Battery Capacity"].clone()),
         state: lines["State"].clone(),
         power_supply_by: lines["Power Supply by"].clone(),
         test_result: Self::first_term(lines["Test Result"].clone()),
